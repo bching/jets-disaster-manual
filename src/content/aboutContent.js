@@ -1,7 +1,21 @@
 import React, {Component} from 'react';
 
 const aboutText = {
-  opening: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  opening: {
+    leadText: "Quick Notes: ",
+    text: "Japan is sitting on the Pacific Ring of Fire and causes frequent earthquakes, which often triggers tsunami and volcanic eruptions. Also due to the geographic, topographic, and climate conditions, there are frequent landslides with heavy rain and typhoons throughout the Japanese archipelago.",
+   },
+   imitationGame: {
+     one: "状況設定",
+     two: "ファシリテーターの指示・問い",
+     three: {
+       left: "覚えてほしい言葉",
+       right: "覚えてほしい文",
+     },
+     four: "必要な知識",
+     five: "Q & A",
+     six: "JETの先生の解答例",
+   },
 }
 
 class AboutContent extends Component {
@@ -13,7 +27,27 @@ class AboutContent extends Component {
 
     return (
       <div className={"sub-row" + toggle}>
-        <p>{aboutText.opening}</p>
+        <div className="chapter-content">
+          <p className="red-thin-round-border light-red-background"><b>{aboutText.opening.leadText}</b>{aboutText.opening.text}</p>
+
+          <h2>Disaster Imagination Game</h2>
+          <div className="flex-vertical">
+            <div className="static-box round-border blue-background blue-round-border">{aboutText.imitationGame.one}</div>
+            <div className="down"><i></i></div>
+            <div className="static-box round-border light-orange-border light-brown-background ">{aboutText.imitationGame.two}</div>
+            <div className="down"><i></i></div>
+            <div className="flex-row">
+              <div className="static-box round-border light-green-border light-green-background">{aboutText.imitationGame.three.left}</div>
+              <div className="static-box round-border light-orange-border salmon-background">{aboutText.imitationGame.three.right}</div>
+            </div>
+            <div className="down"><i></i></div>
+            <div className="static-box round-border dark-red-border light-pink-background">{aboutText.imitationGame.four}</div>
+            <div className="down"><i></i></div>
+            <div className="static-box round-border purple-border purple-background">{aboutText.imitationGame.five}</div>
+            <div className="down"><i></i></div>
+            <div className="static-box round-border dark-red-border">{aboutText.imitationGame.six}</div>
+          </div>
+        </div>
       </div>
     );
   }

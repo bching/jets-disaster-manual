@@ -56,3 +56,111 @@ body {
 .sub-row-active {
   display: block;
 }
+
+.chapter-content {
+  margin: 20px;
+}
+
+p {
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-vertical > * {
+  margin: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+i {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 9px;
+}
+
+/*** Borders and backgrounds ***/
+.static-box {
+  font-size: 20px;
+  width: auto;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.round-border {
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+.red-thin-round-border {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.dark-red-border {
+  border-color: rgba(179, 87, 81, 1.0);
+}
+
+.blue-round-border {
+  border-color: rgba(140, 140, 255, 1.0);
+}
+
+.light-orange-border {
+  border-color: rgba(242, 201, 164, 1.0);
+}
+
+.purple-border {
+  border-color: rgba(121,	99, 157,1.0);
+}
+
+.light-green-border {
+  border-color: rgba(183, 208, 126, 1.0);
+}
+
+.blue-background {
+  background: rgba(150, 150, 255, 0.5);
+}
+
+.purple-background {
+  background: rgba(213,	204, 235, 0.5);
+}
+
+.light-red-background {
+  background: rgba(255, 100, 100, 0.5);
+}
+
+.light-brown-background {
+  background: rgba(220, 217, 197, 0.5);
+}
+
+.light-green-background {
+  background: rgba(225,	251,176, 0.5);
+}
+
+.salmon-background {
+  background: rgba(250,	233,	218, 0.5);
+}
+
+.light-pink-background {
+  background: rgba(249,	226,	233, 0.5);
+}
+/*** End of borders and backgrounds ***/
