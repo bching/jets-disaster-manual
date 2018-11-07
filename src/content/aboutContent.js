@@ -32,7 +32,7 @@ class AboutContent extends Component {
 
           <h2>Disaster Imagination Game</h2>
           <div className="flex-vertical">
-            <div className="static-box round-border blue-background blue-round-border">{aboutText.imitationGame.one}</div>
+            <div className="static-box round-border blue-background blue-border">{aboutText.imitationGame.one}</div>
             <div className="down"><i></i></div>
             <div className="static-box round-border light-orange-border light-brown-background ">{aboutText.imitationGame.two}</div>
             <div className="down"><i></i></div>

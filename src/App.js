@@ -12,8 +12,8 @@ class TableContents extends Component {
     super(props);
     this.state = {
       subRows: {
-        "about": true,
-        "earthquake": false,
+        "about": false,
+        "earthquake": true,
         "tsunami": false,
         "landslide": false,
         "volcano": false,
