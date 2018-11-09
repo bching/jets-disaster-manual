@@ -3,8 +3,6 @@ html {
 }
 body {
   margin: 0;
-  /* border: 5px solid black; */
-  /* border-radius: 1%; */
   height: 100%;
 }
 
@@ -86,6 +84,24 @@ h2 {
   justify-content: space-around;
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 5px;
+  margin: 0 10px 10px 10px;
+  align-items: baseline;
+}
+
+.vocab-grid > * {
+  text-align: center;
+}
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -99,16 +115,20 @@ i {
 }
 
 .align-right {
-  text-align: left;
+  float: right;
 }
 
-/*** Borders and backgrounds ***/
 .static-box {
   display: inline-block;
   font-size: 20px;
   padding: 0.5em;
+}
+
+.center-text {
   text-align: center;
 }
+
+/*** Borders and backgrounds ***/
 
 .round-border {
   border: 2px solid;
@@ -130,6 +150,10 @@ i {
 
 .light-orange-border {
   border-color: rgba(242, 201, 164, 1.0);
+}
+
+.light-brown-border {
+  border-color: rgba(204,	136,	47, 1.0);
 }
 
 .purple-border {
@@ -168,3 +192,30 @@ i {
   background: rgba(249,	226,	233, 0.5);
 }
 /*** End of borders and backgrounds ***/
+
+/*** Speech bubble credit of: https://leaverou.github.io/bubbly/ ***/
+.speech-bubble {
+	position: relative;
+  /* right: 16%; */
+	background: #00aabb;
+	border-radius: 2em;
+}
+
+.speech-bubble h2 {
+  margin: 0.50em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
