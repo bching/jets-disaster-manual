@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jets-disaster-manual/precache-manifest.27df320c13069c4e89c606c4beacede0.js"
+  "/jets-disaster-manual/precache-manifest.31c879dcb294bcd3dea0aa6085927f9d.js"
 );
 
 workbox.clientsClaim();
