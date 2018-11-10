@@ -1,86 +1,6 @@
 import React, {Component} from 'react';
 
-const earthquakeText = {
-  goal: "ゴール：（JETの先生）が災害の状況を正しく理解し、自分の身を守りながら安全に避難できる",
-  scenario: {
-    one: "３月のある晴れた日。休日の日中、自宅で一人でテレビをみている。",
-    two: "テレビで緊急地震速報が入る。その後地震が発生。強い揺れ。震度は５強。",
-  },
-  question: "あなたはどうしますか。",
-  actionOne: "１.１　あわてず身の安全を守ることができる場合",
-  actionOneResult: "身を守る行動ができました",
-  actionOneBubble: "良い行動",
-  actionTwo: "１.２　何もできない場合",
-  actionTwoResult: "身を守ることができませんでした",
-  actionTwoBubble: "悪い行動",
-  youtubeBox: {
-    emergencyInfo:
-      "緊急地震速報：突然テレビからチャイムの音が鳴り、" +
-      "緊急地震速報が放送される。テレビの他に、ラジオ、携帯電話・スマートフォンにも伝えられる。",
-    linkOne: {
-      leadText: "Be familiar with the sound: ",
-      link: "https://www.youtube.com/watch?v=mxPEAN2wao0",
-    },
-    linkTwo: {
-      leadText: "Japanese cell phone EEW sound: ",
-      link: "https://www.youtube.com/watch?v=DbRJAflnt8A",
-    },
-  },
-  tvScenario: {
-    one: "テレビ、携帯から緊急地震速報が発令されました。内容が理解できますか。",
-    two: "テレビの緊急地震速報の内容が理解できた。",
-    three: "テレビの速報を理解するために必要な言葉",
-  },
-  reportVocab: {
-    earthquake: {
-      eng: "Earthquake",
-      say: "Jishin",
-      hira: "じしん",
-      kanji: "地震",
-    },
-    intensity: {
-      eng: "Seismic Intensity",
-      say: "Shindo",
-      hira: "しんど",
-      kanji: "震度",
-    },
-    magnitude: {
-      eng: "Magnitude",
-      say: "Magunichuudo",
-      hira: "マグニチュード",
-    },
-    epicenter: {
-      eng: "Epicenter",
-      say: "Shingenchi",
-      hira: "しんげんち",
-      kanji: "震源地",
-    },
-    countOne: {
-      one: "1 ichi",
-      two: "2 ni",
-      three: "3 san",
-      four: "4 yon",
-      five: "5 go",
-    },
-    countTwo: {
-      six: "6 roku",
-      seven: "7 nana",
-      eight: "8 hachi",
-      nine: "9 kyuu",
-    },
-    countAmp: {
-      fiveMin: "5- go jaku",
-      fiveMax: "5+ go kyoo",
-      sixMin: "6- roku jaku",
-      sixMax: "6+ roku kyoo",
-    },
-    countDec: {
-      one: "7.3 nana ten san",
-      two: "9.2 kyuu ten ni",
-      three: "9.0 kyuu ten zero",
-    },
-  },
-};
+import earthquakeText from './json/earthquakeText.json';
 
 class EarthquakeContent extends Component {
   render() {
@@ -92,7 +12,7 @@ class EarthquakeContent extends Component {
     return (
 
       <div className={"sub-row" + toggle}>
-          <h2>自分を守る編</h2>
+        <h2>自分を守る編</h2>
         <div className="chapter-content">
 
           <p className="static-box round-border blue-border">{earthquakeText.goal}</p><br/>
@@ -117,55 +37,73 @@ class EarthquakeContent extends Component {
             <b>{earthquakeText.youtubeBox.linkTwo.leadText}</b><a href={earthquakeText.youtubeBox.linkTwo.link}>{earthquakeText.youtubeBox.linkTwo.link}</a></p>
         </div>
 
+        <div className="flex-vertical">
+          <p className="static-box round-border light-green-border light-green-background">{earthquakeText.tvScenario.one}</p>
+          <p className="static-box round-border dark-red-border">{earthquakeText.tvScenario.two}</p>
+        </div>
+        <p className="static-box center-text square-border light-green-border">{earthquakeText.tvScenario.three}</p><br/>
+
         <div className="vocab-grid">
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.earthquake.eng}<br/>
             {earthquakeText.reportVocab.earthquake.say}<br/>
             {earthquakeText.reportVocab.earthquake.hira}<br/>
             {earthquakeText.reportVocab.earthquake.kanji}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.intensity.eng}<br/>
             {earthquakeText.reportVocab.intensity.say}<br/>
             {earthquakeText.reportVocab.intensity.hira}<br/>
             {earthquakeText.reportVocab.intensity.kanji}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.magnitude.eng}<br/>
             {earthquakeText.reportVocab.magnitude.say}<br/>
             {earthquakeText.reportVocab.magnitude.hira}<br/>
             {earthquakeText.reportVocab.magnitude.kanji}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.epicenter.eng}<br/>
             {earthquakeText.reportVocab.epicenter.say}<br/>
             {earthquakeText.reportVocab.epicenter.hira}<br/>
             {earthquakeText.reportVocab.epicenter.kanji}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.countOne.one}<br/>
             {earthquakeText.reportVocab.countOne.two}<br/>
             {earthquakeText.reportVocab.countOne.three}<br/>
             {earthquakeText.reportVocab.countOne.four}<br/>
             {earthquakeText.reportVocab.countOne.five}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.countTwo.six}<br/>
             {earthquakeText.reportVocab.countTwo.seven}<br/>
             {earthquakeText.reportVocab.countTwo.eight}<br/>
             {earthquakeText.reportVocab.countTwo.nine}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.countAmp.fiveMin}<br/>
             {earthquakeText.reportVocab.countAmp.fiveMax}<br/>
             {earthquakeText.reportVocab.countAmp.sixMin}<br/>
             {earthquakeText.reportVocab.countAmp.sixMax}
           </div>
-          <div className="round-border">
+          <div className="round-border light-green-background">
             {earthquakeText.reportVocab.countDec.one}<br/>
             {earthquakeText.reportVocab.countDec.two}<br/>
             {earthquakeText.reportVocab.countDec.three}
           </div>
+        </div>
+
+        <p className="round-border dark-red-border">
+          <b>{earthquakeText.definitionRed.mag}</b>{earthquakeText.definitionRed.magnitudeDef}<br/>
+          <b>{earthquakeText.definitionRed.shindo}</b>{earthquakeText.definitionRed.shindoDef}<br/>
+          <a href={earthquakeText.definitionRed.link}>{earthquakeText.definitionRed.link}</a>
+        </p>
+
+        <div className="flex-row">
+          <p className="round-border red-background">{earthquakeText.eqRecordRow.kobe}</p>
+          <p className="round-border red-background">{earthquakeText.eqRecordRow.tohoku}</p>
+          <p className="round-border red-background">{earthquakeText.eqRecordRow.kumamoto}</p>
         </div>
       </div>
     );

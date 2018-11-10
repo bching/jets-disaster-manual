@@ -1,0 +1,92 @@
+{
+  "goal": "ゴール：（JETの先生）が災害の状況を正しく理解し、自分の身を守りながら安全に避難できる",
+  "scenario": {
+    "one": "３月のある晴れた日。休日の日中、自宅で一人でテレビをみている。",
+    "two": "テレビで緊急地震速報が入る。その後地震が発生。強い揺れ。震度は５強。"
+  },
+  "question": "あなたはどうしますか。",
+  "actionOne": "１.１　あわてず身の安全を守ることができる場合",
+  "actionOneResult": "身を守る行動ができました",
+  "actionOneBubble": "良い行動",
+  "actionTwo": "１.２　何もできない場合",
+  "actionTwoResult": "身を守ることができませんでした",
+  "actionTwoBubble": "悪い行動",
+  "youtubeBox": {
+    "emergencyInfo":
+      "緊急地震速報：突然テレビからチャイムの音が鳴り、緊急地震速報が放送される。テレビの他に、ラジオ、携帯電話・スマートフォンにも伝えられる。",
+    "linkOne": {
+      "leadText": "Be familiar with the sound: ",
+      "link": "https://www.youtube.com/watch?v=mxPEAN2wao0"
+    },
+    "linkTwo": {
+      "leadText": "Japanese cell phone EEW sound: ",
+      "link": "https://www.youtube.com/watch?v=DbRJAflnt8A"
+    }
+  },
+  "tvScenario": {
+    "one": "テレビ、携帯から緊急地震速報が発令されました。内容が理解できますか。",
+    "two": "テレビの緊急地震速報の内容が理解できた。",
+    "three": "テレビの速報を理解するために必要な言葉"
+  },
+  "reportVocab": {
+    "earthquake": {
+      "eng": "Earthquake",
+      "say": "Jishin",
+      "hira": "じしん",
+      "kanji": "地震"
+    },
+    "intensity": {
+      "eng": "Seismic Intensity",
+      "say": "Shindo",
+      "hira": "しんど",
+      "kanji": "震度"
+    },
+    "magnitude": {
+      "eng": "Magnitude",
+      "say": "Magunichuudo",
+      "hira": "マグニチュード"
+    },
+    "epicenter": {
+      "eng": "Epicenter",
+      "say": "Shingenchi",
+      "hira": "しんげんち",
+      "kanji": "震源地"
+    },
+    "countOne": {
+      "one": "1 ichi",
+      "two": "2 ni",
+      "three": "3 san",
+      "four": "4 yon",
+      "five": "5 go"
+    },
+    "countTwo": {
+      "six": "6 roku",
+      "seven": "7 nana",
+      "eight": "8 hachi",
+      "nine": "9 kyuu"
+    },
+    "countAmp": {
+      "fiveMin": "5- go jaku",
+      "fiveMax": "5+ go kyoo",
+      "sixMin": "6- roku jaku",
+      "sixMax": "6+ roku kyoo"
+    },
+    "countDec": {
+      "one": "7.3 nana ten san",
+      "two": "9.2 kyuu ten ni",
+      "three": "9.0 kyuu ten zero"
+    }
+  },
+  "definitionRed": {
+    "mag": "Magnitude: ",
+    "magnitudeDef": "Measures the energy released at the source of the earthquake. Is determined from measurements on seismographs. In Japan, magnitude 7 is indicated as M7.",
+    "shindo": "Shindo: ",
+    "shindoDef": "Measures the degree of shaking produced the earthquake at a certain location. It is measured byJMA (Japan Meteorological Agency)’s seismic Intensity scale.",
+    "link": "https://disaster-preparedness.org/2017/01/03/whats-the-difference-between-magnitude-and-the-japanese-seismic-intensity-shindo-scale/"
+  },
+  "eqRecordRow": {
+    "kobe": "1995 Kobe Jishin M7.3",
+    "tohoku": "2011 Tohoku Jishin M9.0",
+    "kumamoto": "2016 Kumamoto Jishin M7.3"
+  }
+}
