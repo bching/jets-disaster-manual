@@ -29,54 +29,55 @@
     "three": "テレビの速報を理解するために必要な言葉"
   },
   "reportVocab": {
-    "earthquake": {
-      "eng": "Earthquake",
-      "say": "Jishin",
-      "hira": "じしん",
-      "kanji": "地震"
-    },
-    "intensity": {
-      "eng": "Seismic Intensity",
-      "say": "Shindo",
-      "hira": "しんど",
-      "kanji": "震度"
-    },
-    "magnitude": {
-      "eng": "Magnitude",
-      "say": "Magunichuudo",
-      "hira": "マグニチュード"
-    },
-    "epicenter": {
-      "eng": "Epicenter",
-      "say": "Shingenchi",
-      "hira": "しんげんち",
-      "kanji": "震源地"
-    },
-    "countOne": {
-      "one": "1 ichi",
-      "two": "2 ni",
-      "three": "3 san",
-      "four": "4 yon",
-      "five": "5 go"
-    },
-    "countTwo": {
-      "six": "6 roku",
-      "seven": "7 nana",
-      "eight": "8 hachi",
-      "nine": "9 kyuu"
-    },
-    "countAmp": {
-      "fiveMin": "5- go jaku",
-      "fiveMax": "5+ go kyoo",
-      "sixMin": "6- roku jaku",
-      "sixMax": "6+ roku kyoo"
-    },
-    "countDec": {
-      "one": "7.3 nana ten san",
-      "two": "9.2 kyuu ten ni",
-      "three": "9.0 kyuu ten zero"
-    }
+    "earthquake": [
+      "Earthquake",
+      "Jishin",
+      "じしん",
+      "地震"
+    ],
+    "intensity": [
+      "Seismic Intensity",
+      "Shindo",
+      "しんど",
+      "震度"
+    ],
+    "magnitude": [
+      "Magnitude",
+      "Magunichuudo",
+      "マグニチュード"
+    ],
+    "epicenter": [
+      "Epicenter",
+      "Shingenchi",
+      "しんげんち",
+      "震源地"
+    ],
+    "countOne": [
+      "1 ichi",
+      "2 ni",
+      "3 san",
+      "4 yon",
+      "5 go"
+    ],
+    "countTwo": [
+      "6 roku",
+      "7 nana",
+      "8 hachi",
+      "9 kyuu"
+    ],
+    "countAmp": [
+      "5- go jaku",
+      "5+ go kyoo",
+      "6- roku jaku",
+      "6+ roku kyoo"
+    ],
+    "countDec": [
+      "7.3 nana ten san",
+      "9.2 kyuu ten ni",
+      "9.0 kyuu ten zero"
+    ]
   },
+
   "definitionRed": {
     "mag": "Magnitude: ",
     "magnitudeDef": "Measures the energy released at the source of the earthquake. Is determined from measurements on seismographs. In Japan, magnitude 7 is indicated as M7.",
@@ -84,9 +85,202 @@
     "shindoDef": "Measures the degree of shaking produced the earthquake at a certain location. It is measured byJMA (Japan Meteorological Agency)’s seismic Intensity scale.",
     "link": "https://disaster-preparedness.org/2017/01/03/whats-the-difference-between-magnitude-and-the-japanese-seismic-intensity-shindo-scale/"
   },
+
   "eqRecordRow": {
     "kobe": "1995 Kobe Jishin M7.3",
     "tohoku": "2011 Tohoku Jishin M9.0",
     "kumamoto": "2016 Kumamoto Jishin M7.3"
+  },
+
+  "tvRikai": {
+    "header": "テレビの速報を理解するため",
+
+    "vocab": {
+      "first": [
+        "Emergency EEW*",
+        "Kinkyuu Jishin sokuho",
+        "きんきゅう　じしんそくほう",
+        "緊急地震速報",
+        "EEW = Earthquake Early Warning"
+      ],
+      "second": [
+        "Head",
+        "Atama",
+        "あたま",
+        "頭"
+      ],
+      "third": [
+        "Falling objects",
+        "Rakkabutsu",
+        "らっかぶつ",
+        "落下物"
+      ],
+      "fourth": [
+        "Aftershock",
+        "Yoshin",
+        "よしん",
+        "余震"
+      ]
+    },
+
+    "phrase": {
+      "first": [
+        "There was an earthquake just now",
+        "Tadaima jishin ga arimashita",
+        "ただいまじしんがありました",
+        "ただ今地震がありました"
+      ],
+      "second": [
+        "An earthquake has occurred",
+        "Jishin ga hassei shimashita",
+        "じしんがはっせいしました",
+        "地震が発生しました"
+      ],
+      "third": [
+        "Watch out",
+        "Kiotsuketekudasai",
+        "きをつけてください",
+        "気をつけてください"
+      ],
+      "fourth": [
+        "Keep alert",
+        "Keikaishitekudasai",
+        "けいかいしてください",
+        "警戒してください"
+      ],
+      "fifth": [
+        "Be careful",
+        "Chūi shitekudasai",
+        "ちゅういしてください",
+        "注意してください"
+      ],
+      "sixth": [
+        "Stay calm",
+        "Ochitsuitekudasai",
+        "おちついてください",
+        "落ち着いてください"
+      ],
+      "seventh": [
+        "Protect your head",
+        "Atamani kiotsukete kudasai",
+        "あたまにきをつけてください",
+        "頭に気をつけてください"
+      ],
+      "eighth": [
+        "Watch out for falling objects",
+        "Rakkabutsu ni kiotsuketekudasai",
+        "らっかぶつにきをつけてください",
+        "落下物に気をつけてください"
+      ],
+      "ninth": [
+        "Act in a calm manner",
+        "Ochitsuite koudoshitekudasai",
+        "おちついてこうどうしてください",
+        "落ち着いて行動してください"
+      ],
+      "tenth": [
+        "Protect yourself",
+        "Mi o mamottekudasai",
+        "みをまもってください",
+        "身を守ってください"
+      ],
+      "eleventh": [
+        "Possibility of tsunami",
+        "Tsunami no osore ga arimasu",
+        "つなみのおそれがあります",
+        "津波の恐れがあります"
+      ],
+      "twelfth": [
+        "Beward of aftershock",
+        "Yoshin ni kiotsuketekudasai",
+        "よしんにきをつけてください",
+        "余震に気をつけてください"
+      ]
+    }
+  },
+
+  "quickNotes": {
+    "point1": "The gas is shut off automatically right after a major quake with magnitude 5 or greater.",
+    "point2": "Aftershocks can be greater than the initial earthquake.",
+    "point3": "Earthquakes sometimes create tsunamis. Pay attention to tsunami warnings."
+  },
+
+  "scenario2": {
+    "one": "家の外に出ました。周りに沢山人がいます。",
+    "two": "あなたはどうしますか。",
+    "action": "孤立しない行動：人に聞くことができ、状況が理解できた。",
+    "vocabHeader": "人に聞くために知っておきたい言葉",
+    "vocab": {
+      "first": [
+         "Safe area",
+         "Hinanbasho",
+         "ひなんばしょ",
+         "避難場所"
+      ],
+      "second": [
+         "Shelter",
+         "Hinanjo",
+         "ひなんばしょ",
+         "避難所"
+      ],
+      "third": [
+         "Tsunami",
+         "Tsunami",
+         "つなみ",
+         "津波"
+      ]
+    },
+    "phrase": {
+      "first": [
+        "Where is a safe place?",
+        "Hinanbasho wa dokodesuka",
+        "ひなんばしょはどこですか",
+        "避難場所はどこですか"
+      ],
+      "second": [
+        "Where is a shelter?",
+        "Hinanjo wa dokodesuka",
+        "ひなんじょはどこですか",
+        "避難場所はどこですか"
+      ],
+      "third": [
+        "Is tsunami coming?",
+        "Tsunami wa kimasuka",
+        "つなみはきますか",
+        "津波は来ますか"
+      ],
+      "fourth": [
+        "What is happening?",
+        "Naniga okite imasuka",
+        "なにがおきていますか",
+        "何が起きていますか"
+      ],
+      "fith": [
+        "What should I do?",
+        "Dou shitara iidesuka",
+        "どうしたらいいですか"
+      ],
+      "sixth": [
+        "I will follow you",
+        "Isshoni ikimasu",
+        "いっしょにいきます",
+        "一緒に行きます"
+      ],
+      "seventh": [
+        "Please wait",
+        "Matte kudasai",
+        "まってください",
+        "待ってください"
+      ]
+    }
+  },
+
+  "quickNotes2": {
+    "one": "When you are near the coast, pay attention to tsunami warnings.",
+    "two": "When you are outside, do not isolate yourself."
   }
+
+
+
+
 }
